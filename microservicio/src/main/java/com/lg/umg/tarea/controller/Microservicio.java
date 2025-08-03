@@ -12,22 +12,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/demo")
 public class Microservicio {
 
-	@GetMapping("/get")
+	@GetMapping
 	public ResponseEntity<String> get() {
 		return ResponseEntity.ok ("Se  utilizo el metodo GET");
 	}
 	
-	@PostMapping("/post")
+	@PostMapping
 	public ResponseEntity<String> post() {
 		return ResponseEntity.ok ("Se  utilizo el metodo POST");
 	}
 	
-	@PutMapping("/put")
+	@PutMapping
 	public ResponseEntity<String> put() {
 		return ResponseEntity.ok ("Se  utilizo el metodo PUT");
 	}
 	
-	@DeleteMapping("/delete")
+	@DeleteMapping
 	public ResponseEntity<String> delete() {
 		return ResponseEntity.ok ("Se  utilizo el metodo DELETE");
 	}
